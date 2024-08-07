@@ -1,12 +1,14 @@
-import React from 'react'
-import { View, Text } from 'react-native'
-
-import styles from './popularjobs.style'
+import { useState } from "react";
+import { useRouter } from "expo-router";
+import {View, Text, TouchableOpacity, FlatList, ActivityIndicator} from "react-native";
+import styles from "./popularjobs.style";
+import { COLORS, SIZES } from "../../../constants";
+import PopularJobCard from "../../common/cards/popular/PopularJobCard";
 
 const Popularjobs = () => {
   return (
     <View>
-      <Text>Popularjobs</Text>
+      <Text>Popular Jobs</Text>
     </View>
   )
 }
