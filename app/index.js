@@ -24,7 +24,7 @@ const Home = () => {
                     headerRight: () => (
                         <ScreenHeaderBtn iconUrl={images.profile} dimension='100%' />
                     ),
-                    headerTitle: "Dashboard Alerts"
+                    headerTitle: "Job Alerts"
                 }}
             />
             <ScrollView showsVerticalScrollIndicator={false}>

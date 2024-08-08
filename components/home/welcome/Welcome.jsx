@@ -19,8 +19,8 @@ const Welcome = () => {
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>Hello, Rohan!</Text>
-        <Text style={styles.welcomeMessage}>Let's find a perfect dashboard.</Text>
+        <Text style={styles.userName}>Hello, Rohan</Text>
+        <Text style={styles.welcomeMessage}>Let's find the perfect jobs!</Text>
       </View>
 
       <View style={styles.searchContainer}>
@@ -29,7 +29,7 @@ const Welcome = () => {
             style={styles.searchInput}
             // value={searchTerm}
             // onChangeText={(text) => setSearchTerm(text)}
-            placeholder='What are you looking for?'
+            placeholder='What role are you looking for?'
           />
         </View>
         <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
