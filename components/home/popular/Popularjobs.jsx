@@ -9,11 +9,11 @@ import useFetch from "../../../hook/useFetch";
 const Popularjobs = () => {
   const router = useRouter();
   const { data, isLoading, error } = useFetch("search", {
-    query: "React developer",
+    query: "Web developer in bengaluru",
     num_pages: "1",
   });
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <View style={styles.container}>
@@ -30,7 +30,7 @@ const Popularjobs = () => {
           <Text>Something went wrong</Text>
         ) : (
           <FlatList
-            data={[1,2,3,4]}
+            data={data}
             renderItem={({ item }) => (
               <PopularJobCard
                 item={item}
@@ -38,7 +38,7 @@ const Popularjobs = () => {
                 // handleCardPress={handleCardPress}
               />
             )}
-            keyExtractor={(item) => item.job_id}
+            keyExtractor={(item) => item.job_id.toString()}
             contentContainerStyle={{ columnGap: SIZES.medium }}
             horizontal
           />
